@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./ai_school_introduce.css" />
 </head>
 <body>
-    <h1>로그인</h1>
-    <label for="id">아이디 : </label>
-    <input id="id" type="text" placeholder="아이디를 입력하세요."> 
-    <br>
-    <label for="pw">비밀번호 : </label>
-    <input id="pw" type="password" placeholder="비밀번호를 입력하세요."> 
-    <br>
-    <br>
-    <select name="질문">
-        <option value="q1">졸업한 초등학교?</option>
-        <option value="q2">태어난 곳?</option>
-        <option value="q3">어릴 때 별명?</option>
-    </select>
-    <br>
-    <input type="text" placeholder="질문 답">
-    <br>
-    <br>
-    <form action="https://server.ai-school.com" method="POST">
+    <h1>회원가입</h1>
+    <hr>
+    <form action="./success.html" method="POST">
+        <label for="id">아이디 : </label>
+        <input id="id" type="text" placeholder="아이디를 입력하세요."> 
+        <br>
+        <label for="pw">비밀번호 : </label>
+        <input id="pw" type="password" placeholder="비밀번호를 입력하세요."> 
+        <br>
+        <br>
+        <span>질문 : </span>
+        <select name="질문">
+            <option value="q1">졸업한 초등학교?</option>
+            <option value="q2">태어난 곳?</option>
+            <option value="q3">어릴 때 별명?</option>
+        </select>
+        <br>
+        <span>질문 답 : </span><input type="text" placeholder="질문 답">
+        <br>
+        <br>
+        <div>자기소개</div>
         <textarea name="자기소개"cols="30" rows="10"
         placeholder="자기소개를 입력해주세요."></textarea>
         <br>
